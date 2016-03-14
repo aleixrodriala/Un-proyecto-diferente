@@ -46,7 +46,7 @@ class Spotipy:
 		audio_driver = spotify.AlsaSink(self.session)
 		event_loop = spotify.EventLoop(self.session)
 		event_loop.start()
-		self.session.login('teamcals1', 'carles1369', remember_me=True)
+		self.session.login('user', 'password', remember_me=True)
 		self.logged_in.wait()
 
 	def getTrack(self, track_uri):
